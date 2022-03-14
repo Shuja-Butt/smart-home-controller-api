@@ -1,0 +1,31 @@
+{
+    "credentials": {
+        "tenantName": "smarthomesolutionsmain.onmicrosoft.com",
+        "clientID": "dbe0876d-647d-4069-bf0d-4ec48cbc055b"
+    },
+    "policies": {
+        "policyName": "B2C_1_sigin_signup"
+    },
+    "metadata": {
+        "b2cDomain": "smarthomesolutionsmain.b2clogin.com",
+        "authority": "login.microsoftonline.com",
+        "discovery": ".well-known/openid-configuration",
+        "version": "v2.0"
+    },
+    "settings": {
+        "isB2C": true,
+        "validateIssuer": false,
+        "passReqToCallback": false,
+        "loggingLevel": "info"
+    },
+    "protectedRoutes": {
+        "scopes": ["devices.read"],
+        "addnewDevice": {
+            "endpoint": "/device/addnew"
+        },
+        "getAllDevices":{
+            "endpoint": "/devices/:category"
+        }
+        
+    }
+}
